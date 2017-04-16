@@ -1,0 +1,324 @@
+/*
+Project Name: Relaxr Landing Page & Blog
+Client: Relaxr
+Author: Gabrielle Zandi
+Developer @GA in NYC
+*/
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #FFFFFF; /*White*/
+     line-height: 1.4;
+     font-family:'Open Sans', sans-serif;
+     background-color: #f0efef; /*Background color*/ 
+}
+
+.clearfix:after{
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* STYLES for About Landing page
+/*******************************************/
+
+/*****Layout******/
+
+.hero{
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  background: url(../images/header_bg.jpg) no-repeat center top; /*Centering and placing background image*/
+  background-size: cover; /*Full bleed image*/
+  text-align: center;
+}
+
+.benefitscontainer{
+  width: 100%;
+  margin: auto;
+  padding:7% 10%; /*Padding for "Benefits" indentation*/
+  height: 210px;
+  background-color: #f0efef; /*Custom background color (close to white)*/
+  background-size: cover; /*Full bleed image*/
+  color:#606161; /*Light Grey*/
+}
+
+.testimonialcontainer{
+  width: 100%;
+  margin: auto;
+  height: 200px;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top; /*Centering and placing background image*/
+  background-size: cover;
+  text-align: center;
+}
+
+.prefooterabout{
+  width: 100%;
+  height: 80px;
+  background-color:#f9e42e; /*Yellow*/
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color:#121212; /*Almost Black*/
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.finalfooter{
+  font-size:9px;
+  font-weight: 600;
+  color:#FFFFFF; /*White*/
+  margin: 0 auto; 
+  padding-bottom: 10px: 
+}
+
+/*****Elements******/
+
+.pagetitle{ 
+  font-size: 24px; 
+  font-weight:600; /*Semibold*/
+  margin: 55px; /*Used for spacing*/
+}
+
+.getitnow{/*Get It Now Button*/
+  color:#033048; /*Navy*/
+  background-color:#f9e42e;
+  font-weight: 800; /*Extrabold*/
+  font-size: 14px;
+  border-radius: 5px; /*Rounded Edges*/
+  padding:5px 30px; /*5 top and bottom, 30 left and right*/
+  display:inline-block; /*Display as a content block (instead of full page width)*/
+}
+
+.benefits{
+  float: left; /*Aligning to left*/
+  width: 43%; /*43% of page width*/
+  color:#033048; /*Navy*/
+}
+.bullets{
+  list-style-type: none; /*Made custom sytling below*/
+  margin-left:50px; /*Indent bullets*/
+  font-weight: 300; /*Light*/
+  font-size: 13px;
+  margin-top: 10px;
+  color: #606161; /*Light Grey*/
+}
+.custom-bullets li{
+  margin-top: 5px; /*Spacing between lines (could have also done this through line spacing)*/
+  width: 90%; /*90% width of benefits container*/
+  position: relative;
+}
+.custom-bullets li:before { /*Custom bullets*/
+  display: inline-block;
+  background-color: #606161; /*Light Grey*/
+  width: 5px;
+  height: 5px;
+  border-radius: 100%; /*To make circles*/
+  content: '';
+  position: relative; 
+  margin-right:10px; /*For spacing between line content and bullet*/
+}
+.benefitsp{
+ font-weight:300; /*Light*/
+ font-size: 13px;
+ margin-top: 10px;
+ margin-bottom: 20px;
+ color: #606161; /*Light Grey*/
+}
+.testimonial{
+   font-weight:300i; /*Light Italics*/
+   font-style: italic; /*Italics sinc the "i" above wasn't working*/
+   font-size:18px;
+   width:40%; /*40% of page width for centered testimonial*/
+   margin-top: 5%;
+   display:inline-block; /*Display as a content block (instead of full page width)*/
+   align-content:center; 
+}
+.name{
+  font-weight: 600; /*Semibold*/
+  font-size:18px;
+  align-content:center;
+}
+.signupnow{/*Sign Up Now Button*/
+  color:#FFFFFF; /*White*/
+  background-color:#033048; /*Navy*/
+  display:inline-block; /*Display as a content block (instead of full page width)*/
+  padding:10px 50px; /*5 top and bottom, 40 left and right*/
+  font-weight: 800; /*Extra bold*/
+  font-size: 12px; 
+  border-radius: 5px; /*Rounded Edges*/
+  margin-top: 2%; /*To center button in element*/
+}
+
+
+/*HTML5 Strucutural Elements*/
+
+h1 {
+  font-size: 24px;
+  font-weight: 800; /*Extrabold*/
+  text-align: left;
+  padding-left: 10%; /*Align left*/
+  padding-top: 2%;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 600; /*Semibold*/
+}
+h4{
+  font-size:24px;
+  font-weight: 800; /*Extrabold*/
+  color:#f9e42e; /*Yellow*/
+  padding-top: 3%; 
+}
+
+img{
+  padding: 3% 1%; /*Spacing between social icons*/
+  height: 10%; /*Resizing social icons*/
+}
+
+
+/******************************************
+/* STYLES for Blog Page
+/*******************************************/
+
+/*****Layout******/
+
+.blogheader{
+  background-color: #033048; /*Dark Blue*/
+  width: 100%;
+  height: 80px;
+  margin-bottom: 50px;
+  position: fixed; /*Wanted to make it sticky!*/
+}
+.main { /*Main blog area*/
+  width: 700px;
+  margin-top: 100px; /*Extra margin for sticky nav*/
+  margin-bottom: 10px;
+  margin-left: 90px; 
+  margin-right:20px; /*gutter*/
+  text-align:left;
+  vertical-align:top;
+  display: inline-block;
+}
+.rightrail{
+  width:240px;
+  margin-top: 100px; /*Extra margin for sticky nav*/
+  margin-bottom: 10px;
+  margin-right: 90px; 
+  display: inline-block;
+  text-align:left;
+  vertical-align:top;
+}
+
+/*****Elements******/
+
+/*****header******/
+.title{
+  display:inline-block;
+  text-align: left;
+  font-size: 40px;
+  padding-top:7px; 
+  padding-left:90px; 
+}
+.nav {
+  display: inline-block;
+  float: right; /*Float since I couldn't get text to align right*/
+  padding-top:20px; 
+  padding-right:90px; 
+  font-size: 24px;
+  font-weight: 600; /*Semibold*/
+}
+#navlist li{
+  display: inline-block;
+  text-align: right;
+}
+a{
+  color:#f9e42e; /*Yellow*/
+  text-decoration: none; /*Removed underlilne*/
+  padding-left: 60px;
+}
+a:hover {
+  color: white; /*Had fun with nav hover states!*/
+}
+/*****Main*****/
+.posttitles {
+  color:#033048; /*Dark Blue*/
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600; /*Semibold*/
+  margin: none; /*Removing extra styles from h2 elements, next time will use classes!*/
+  padding: none;
+}
+.postbody{
+  color:#606161; /*Grey*/
+  text-align: left;
+  font-size: 24px;
+  font-weight: 300; /*Light*/
+}
+p:first-letter{ /*I changed all other instances of p to divs to ensure this didn't affect them. Is thre a better way to do this?"*/
+  float: left;
+  font-size: 400%;
+  line-height: 80%;
+  font-weight: 600; /*Semibold*/
+}
+.readmore{
+  display: block; /*To create a border along the entire width of the main content*/
+  text-align: right;
+  color:#033048; /*navy blue*/
+  font-size: 24px;
+  font-weight: 600; /*Semibold*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid;
+  border-bottom-width:thin;
+  border-color: #121212; /*Almost Black*/
+}
+.rightrailheaders{
+  color: #033048;
+  text-align: left;
+  font-size: 34px;
+  font-weight: 800; /*Extrabold*/
+}
+.railcategories{
+  color: #033048;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 300; /*Light*/
+  margin-bottom: 40px;
+}
+.railabout{
+  color: #033048;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 300; /*Light*/
+}
+.learnmore{
+  display: block;
+  text-align: left;
+  color:#033048; /*Navy blue*/
+  font-size: 22px;
+  font-weight: 600; /*Semibold*/
+  margin-bottom: 40px;
+}
+.prefooterblog{
+  width: 100%;
+  height: 80px;
+  background-color:#f9e42e; /*Yellow*/
+  text-align: center;
+  margin: 0 auto; 
+  margin-top: 50px;
+}
