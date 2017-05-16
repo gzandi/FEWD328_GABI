@@ -1,0 +1,23 @@
+html{
+  font-size: 100px;
+  width:100%;
+}
+
+body {
+  color: #f0efef;
+  font-size: .50rem;
+  line-height: 1.4;
+  color: #606161;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 20px; 
+}
+form input{
+  color: purple;
+  font-size: 26px;
+  font-color: purple;
+}
+h1{
+  color: lightblue;
+  font-size: 50px;
+}
+
