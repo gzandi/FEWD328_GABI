@@ -1,0 +1,266 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+html{
+  font-size: 100px;
+  width:100%;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: #0f1f40;
+  font-size: .26rem;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+.topnav{
+  background-color: #333;
+  overflow: hidden;
+}
+nav {
+  display: inline-block;
+  border-radius: .05rem;
+}
+nav a {
+    display: block;
+    width: 1.5rem;
+    color: white;
+    background-color: #0f1f40;
+    text-align: center;
+    padding: .25rem .14rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: .17rem;
+    float: left;
+}
+
+nav a:hover {
+    background-color: #eba1a1;
+    color: #0f1f40;
+}
+
+nav .icon {
+    display: none;
+}
+
+.hero{
+  width: 100%;
+  height: 6.5rem;
+  margin: 0 auto;
+  background: url(../images/hero.jpg) no-repeat center top; /*Centering and placing background image*/
+  background-size: cover; /*Full bleed image*/
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: .65rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: .2rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.divider{
+  background-color: #eba1a1;
+  width: 100%;
+  height: .3rem;
+}
+.featuredcontainer{
+  width: 100%;
+  color: white;
+  display: block;
+  background-color: #0f1f40;
+  margin-bottom: .4rem;
+}
+
+.featureddivider{
+  background-color: #eba1a1;
+  font-size: .18rem;
+  font-weight: 600;
+  color: #0f1f40;
+  text-align: center;
+  padding-top: .4rem;
+  padding-bottom: .4rem; 
+  padding-left: 1.8rem;
+  padding-right: 1.8rem; 
+}
+
+.container img {
+  position: relative;
+  margin: auto;
+  padding: 10px 5px 10px 5px; 
+  height: 5rem;
+}
+
+.overlay {
+  position:absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  height: 100%;
+  width: 100%;
+  opacity:0; /*hidden in normal state*/
+  transition: .5s ease;
+  background-color: rgb(51,51,51);
+}
+
+.container:hover .overlay {
+  opacity:0.5; /*visible in hover state*/
+}
+
+.overlaytext{
+  color:white;
+  font-size:.25rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  font-weight: 300;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text h3 {
+  font-weight: 600;
+}
+.text ul li{
+  text-decoration: none;
+}
+
+.sectionheaders {
+  font-size: .40rem;
+  text-align: center;
+  padding-top: .30rem;
+  padding-bottom: .30rem;
+  color:  white;
+  font-weight: 600;
+  display: block;
+  background-color: #0f1f40;
+}
+
+.mymapscontainer{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: white;
+  background-color: #0f1f40;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+.maps{
+ width:3.5rem;
+ height: 2.5rem;
+ padding: 5px;
+ margin: auto;
+}
+
+.aboutme{
+  color: #0f1f40;
+  width: 100%;
+  background-color: #eba1a1;
+}
+
+.aboutme h2{
+  font-size: .40rem;
+  text-align: center;
+  padding-top: .30rem;
+  padding-bottom: .30rem;
+  font-weight: 600;
+  display: block;
+}
+.aboutmeflex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%
+}
+.aboutmeimg{
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+}
+.aboutmeimg img{
+  width: 75%;
+}
+.aboutmetext{
+  width: 50%;
+  font-size: .26rem;
+  padding: 20px; 
+  margin: auto;
+}
+
+#aboutme a{
+  color: #ee3164;
+  text-decoration: none;
+}
+
+.footer{
+  font-size: .15rem;
+  padding: 10px;
+  text-align: center;
+  background-color: #0f1f40; 
+  color: #eba1a1;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+ .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  
+  html {
+    font-size: 70px;
+  }
+}
+ 
+
+
+
+
+
+

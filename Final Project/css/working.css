@@ -1,0 +1,205 @@
+
+.button {
+  border-radius: .05rem;
+  font-weight: 800;
+  padding: .12rem 0;
+  width: 2.80rem;
+  font-size: .28rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.yellow {
+  background: #f9e42e;
+  color: #033048;
+}
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: .24rem;
+}
+#benefits {
+  padding: 1rem 0 .80rem;
+  margin-left: .25rem;
+}
+h3 {
+  color: #033048;
+  font-size: .40rem;
+  font-weight: 600;
+  margin-bottom: .40rem;
+}
+
+#benefits ul {
+  list-style: disc;
+  margin: .30rem 0 0 .80rem;
+}
+#testimonial {
+  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
+  padding: .70rem 0 .70rem;
+  color: #fff;
+}
+
+}
+#main {
+  margin-top: .80rem;
+}
+#posts {
+  width: 7.00rem;
+  display: inline-block;
+  margin-right: .20rem;
+  margin-left: .20rem;
+  vertical-align: top;
+
+}
+#sidebar {
+  width: 2.40rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.post {
+  border-bottom: .01rem solid #043049;
+  padding-bottom: .40rem;
+  margin-bottom: .40rem;
+}
+.post h2 {
+  font-weight: 600;
+  font-size: .40rem;
+  line-height: 1.3;
+  margin-bottom: .30rem;
+}
+.post h2 a {
+  color: #043049;
+}
+
+.post img {
+  margin-bottom: .30rem;
+}
+.post p {
+  font-size: .24rem;
+  line-height: 1.333;
+  color: #606161;
+  margin: .15rem;
+}
+.post p:first-of-type:first-letter {
+  float: left;
+  font-size: .80rem;
+  line-height: .65rem;
+  padding-top: .04rem;
+  padding-right: .08rem;
+  padding-left: .03rem;
+  font-weight: 600;
+}
+.readmore {
+  text-align: right;
+  margin-top: .30rem;
+  margin-right: .20rem; 
+}
+.readmore a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#sidebar h3 {
+  font-size: .32rem;
+  font-weight: 800;
+  margin-bottom: .15rem;
+  color: #043049;
+}
+#sidebar ul {
+  margin-bottom: .40rem;
+}
+#sidebar ul li a {
+  color: #043049;
+  font-size: .24rem;
+}
+#sidebar p {
+  font-size: .22rem;
+  line-height: 1.1;
+  margin-bottom: .40rem;
+}
+#sidebar p a {
+  color: #043049;
+  font-weight: 600;
+}
+
+#bottom-cta {
+  background: #f9e42e;
+  padding: .30rem;
+  text-align: center;
+}
+
+footer {
+  background: #121212;
+  padding: .65rem 0 .45rem;
+  text-align: center;
+}
+footer .logo {
+  color: #f9e42e;
+  margin-bottom: .68rem;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 .26rem .75rem;
+  height: .10rem;
+}
+footer p {
+  font-size: .18rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/*Media Queries (Responsive Desgin) */
+
+@media (max-width: 480px) {
+    html { 
+      font-size: 50px;
+    }
+    #benefits p, #benefits ul {
+      width: 90%;
+    }
+   #posts {
+      width: 100%; 
+    }
+    #sidebar {
+      width: 100%; 
+      margin-left: .20rem;
+      margin-right: .20rem;
+    }
+     aside img{
+      height: 3rem; 
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    html { font-size: 75px; }
+    #benefits p, #benefits ul {
+      width: 90%;
+      }
+    #posts {
+      width: 100%; 
+    }
+    #sidebar {
+      width: 100%; 
+      margin-left: .20rem;
+      margin-right: .20rem;
+    }
+    aside img{
+      height: 3rem; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    html { font-size: 100px; }
+      #benefits p, #benefits ul {
+      width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    html { font-size: 125px; }
+      #benefits p, #benefits ul {
+      width: 75%;
+    }
+}
