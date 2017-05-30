@@ -23,6 +23,7 @@ html{
 /* BASE STYLES
 /*******************************************/
 
+/* you need to explicitly set a margin in the body */
 body {
   background-color: #0f1f40;
   font-size: .26rem;
@@ -198,6 +199,11 @@ nav .icon {
   font-weight: 600;
   display: block;
 }
+
+/* 3 out of 5 of these styling rules don't do anything */
+
+/* also an alternative: get rid of flex, use display:inline-block
+for the img and the text, set the width to ~45% for each */
 .aboutmeflex{
   display: flex;
   flex-wrap: wrap;
